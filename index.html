@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" manifest="7wonders.manifest">
+<html lang="en" manifest="7WResults.manifest">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <head>
 <link rel="manifest" href="manifest.json" />
-<style>
 
+<style>
+.uhr{
+  align-content: center;
+  text-align: right;
+}
+
+#date{
+  text-align: center;
+}
 .Spieler1{
     position: relative;
     left: 50px;
@@ -68,34 +76,40 @@ background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
     background: #0E5CAD;
   }
 
-  #styleWar {
+  #styleMilitary {
     border: 3px solid red;
+    text-align: center;
+    vertical-align: middle;
   }
 
   #styleCoins {
     border: 3px solid gold;
+    text-align: center;
   }
 
   #stylePyramid {
     border: 3px solid sandybrown;
+    text-align: center;
   }
 
   #styleBlue {
     border: 3px solid rgb(12, 123, 228);
-    
+    text-align: center;
   }
 
   #styleYellow {
     border: 3px solid yellow;
+    text-align: center;
   }
 
   #styleViolet {
     border: 3px solid rgb(164, 3, 185);
-    
+    text-align: center;
   }
 
   #styleGreen {
     border: 3px solid green;
+    text-align: center;
   }
 
 If you want to avoid CSS, see this:
@@ -108,27 +122,28 @@ If you want to avoid CSS, see this:
 </style>
 
 <body lang="en">
-    <title>7 Wonders Results</title>
-    <p  class= "Title" id="Title" >7 Wonders Results</p>
-
+    <title>7W Results</title>
+    <p  class= "Title" id="Title" >7W Results</p>
+    <p id="date"> <br /></p>
     <div style="overflow:auto">
 
-            <form action="Kategorie" background-color: red><div class="Kategorie">
+            <form action="Kategorie"><div class="Kategorie">
                     <p id="Kategorie" >Categories</p>
-                    <p id="styleWar"  >War </p>
-                    <p id="styleCoins" >Coins</p>
-                    <p id="stylePyramid" >Pyramid</p>
-                    <p id="styleBlue" >Blue</p>
-                    <p id="styleYellow" >Yellow</p>
-                    <p id="styleViolet" >Violet</p>
-                    <p id="styleGreen" >Green</p>
+                    <p id="styleMilitary" >&#9876; </p>
+                    <p id="styleCoins" >&#128176;</p>
+                    <p id="stylePyramid" >&#128314;</p>
+                    <p id="styleBlue" >Civil</p>
+                    <p id="styleYellow" >Commerce</p>
+                    <p id="styleViolet" >Guild</p>
+                    <p id="styleGreen" >Science</p>
                     <p id="Kategorie" >Result</p>
+                    <input type="button" id="button" value="Print" onclick=" window.print() " />
                 </div></form>
         <form action="spieler1" id="Player" ><div class="box1">
             <!-- 
             <p id="player1" >Player 1</p>-->
             <input type="Text" id="inputName"  size="15" value="Player 1" /><br /><br />
-            <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+            <div id="styleMilitary"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
             <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
             <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
             <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
@@ -141,7 +156,7 @@ If you want to avoid CSS, see this:
 
         <form action="spieler2"><div class="box2">
                 <input type="Text" id="inputName"  size="15" value="Player 2" /><br /><br />
-                <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+                <div id="styleMilitary"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
             <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
             <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
             <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
@@ -154,7 +169,7 @@ If you want to avoid CSS, see this:
 
             <form action="spieler3" ><div class="box3">
                     <input type="Text" id="inputName"  size="15" value="Player 3" /><br /><br />
-                    <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+                    <div id="styleMilitary"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
             <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
             <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
             <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
@@ -168,7 +183,7 @@ If you want to avoid CSS, see this:
             
                 <form action="spieler4"><div class="box4">
                         <input type="Text" id="inputName"  size="15" value="Player 4" /><br /><br />
-                        <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+                        <div id="styleMilitary"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
             <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
             <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
             <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
@@ -180,8 +195,16 @@ If you want to avoid CSS, see this:
                             
                     </div></form>
                 </div>
-</body>
 
+
+                
+
+</body>
+<script>
+  datum = new Date();
+  date.innerHTML = datum;
+
+</script>
 </head>
 
 </html>

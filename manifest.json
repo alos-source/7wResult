@@ -1,6 +1,6 @@
 {
-"name": "Seven Wonders Auswertung",
-"short_name": "Seven Wonders",
+"name": "7W Results",
+"short_name": "7W Results",
 "start_url": "/js7wonders/index.html",
 "display": "standalone",
 "background_color": "#3E4EB8",
@@ -8,7 +8,7 @@
 "lang":"en_US",
 "icons": [
   {
-    "src": "./images/7wonders-300x190.jpg",
+    "src": "./images/7W-300x190.jpg",
     "sizes": "192x192",
     "type": "image/jpg"
   }
