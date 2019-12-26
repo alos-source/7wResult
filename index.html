@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" manifest="7wonders.manifest">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<head>
+<link rel="manifest" href="manifest.json" />
+<style>
+
+.Spieler1{
+    position: relative;
+    left: 50px;
+}
+.box1, .box2, .box3, .box4 {
+     float: left;
+     width:18%;
+     margin-right: 2%;
+     padding: 10px;
+     background: #eee;
+     box-sizing: border-box;
+     line-height: 10px;
+     margin-top: 10px;
+     min-width: 60px;
+}
+
+ .Kategorie {
+     float: left;
+     width:18%;
+     margin-right: 2%;
+     padding: 05px 10px 10px 5px;
+     background: #eee;
+     box-sizing: border-box;
+     line-height: 16px;
+     margin-top: 10px;
+     max-width: 100px;
+     min-width: 50px;
+
+}
+
+.Title {
+         font-size: 25;
+         text-align: center;
+         border: 3px solid green;
+     }
+
+     .infobox {
+background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+}
+
+#number {
+  width: 3em;
+}
+
+#inputName {
+  width: 6em;
+}
+
+#input1, #input2, #input3, #input4, #input5, #input6, #input7, #output{
+  width: 3em;
+ }
+
+#button{
+    height:20px;
+    width:40px;
+}
+
+#specialcolor {
+    color:red;
+    background: #0E5CAD;
+  }
+
+  #styleWar {
+    border: 3px solid red;
+  }
+
+  #styleCoins {
+    border: 3px solid gold;
+  }
+
+  #stylePyramid {
+    border: 3px solid sandybrown;
+  }
+
+  #styleBlue {
+    border: 3px solid rgb(12, 123, 228);
+    
+  }
+
+  #styleYellow {
+    border: 3px solid yellow;
+  }
+
+  #styleViolet {
+    border: 3px solid rgb(164, 3, 185);
+    
+  }
+
+  #styleGreen {
+    border: 3px solid green;
+  }
+
+If you want to avoid CSS, see this:
+
+<button style="height:200px;width:200px"></button>
+--Gab
+
+
+
+</style>
+
+<body lang="en">
+    <title>7 Wonders Results</title>
+    <p  class= "Title" id="Title" >7 Wonders Results</p>
+
+    <div style="overflow:auto">
+
+            <form action="Kategorie" background-color: red><div class="Kategorie">
+                    <p id="Kategorie" >Categories</p>
+                    <p id="styleWar"  >War </p>
+                    <p id="styleCoins" >Coins</p>
+                    <p id="stylePyramid" >Pyramid</p>
+                    <p id="styleBlue" >Blue</p>
+                    <p id="styleYellow" >Yellow</p>
+                    <p id="styleViolet" >Violet</p>
+                    <p id="styleGreen" >Green</p>
+                    <p id="Kategorie" >Result</p>
+                </div></form>
+        <form action="spieler1" id="Player" ><div class="box1">
+            <!-- 
+            <p id="player1" >Player 1</p>-->
+            <input type="Text" id="inputName"  size="15" value="Player 1" /><br /><br />
+            <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+            <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
+            <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
+            <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
+            <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
+            <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
+            <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
+            <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+            <input type="number" id="output" size="15" value="Result" /><br />
+        </div></form>
+
+        <form action="spieler2"><div class="box2">
+                <input type="Text" id="inputName"  size="15" value="Player 2" /><br /><br />
+                <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+            <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
+            <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
+            <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
+            <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
+            <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
+            <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
+                <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+                <input type="number" id="output" size="15" value="Result" /><br />
+                    </div></form>
+
+            <form action="spieler3" ><div class="box3">
+                    <input type="Text" id="inputName"  size="15" value="Player 3" /><br /><br />
+                    <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+            <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
+            <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
+            <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
+            <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
+            <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
+            <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
+                    <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+                    <input type="number" id="output" size="15" value="Result" /><br />
+                    
+                </div></form>
+            
+                <form action="spieler4"><div class="box4">
+                        <input type="Text" id="inputName"  size="15" value="Player 4" /><br /><br />
+                        <div id="styleWar"><input type="number" id="input1"  size="15" value="0" /><br /><br /></div>
+            <div id="styleCoins"><input type="number" id="input2" size="5" value="0"><br /><br /></div>
+            <div id="stylePyramid"><input type="number" id="input3" size="5" value="0" /><br /><br /></div>
+            <div id="styleBlue"><input type="number" id="input4" size="5" value="0" /><br /><br /></div>
+            <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
+            <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
+            <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
+                        <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+                        <input type="number" id="output" size="15" value="Result" /><br />
+                            
+                    </div></form>
+                </div>
+</body>
+
+</head>
+
+</html>
