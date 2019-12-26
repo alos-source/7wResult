@@ -1,13 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en" manifest="7WResults.manifest">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
+<meta name="description" content="Calculator for Results of a Boardgame">
+<meta name="keywords" content="Calculator, Boardgame, Board Game">
+
 <head>
 <link rel="manifest" href="manifest.json" />
 
 <style>
 .uhr{
   align-content: center;
+  text-align: right;
+}
+
+#VERSION{
   text-align: right;
 }
 
@@ -196,14 +204,16 @@ If you want to avoid CSS, see this:
                     </div></form>
                 </div>
 
-
+<p id=VERSION></p>
                 
 
 </body>
 <script>
   datum = new Date();
   date.innerHTML = datum;
-
+  versionstring = "Version # v"
+versionnumber = 0.1;
+VERSION.innerHTML = versionstring+versionnumber;
 </script>
 </head>
 
