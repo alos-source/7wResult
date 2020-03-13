@@ -1,7 +1,7 @@
 {
 "name": "7W Results",
 "short_name": "7W Results",
-"start_url": "/js7w/index.html",
+"start_url": "https://alos-source.github.io/7wResult/index.html",
 "display": "standalone",
 "background_color": "#3E4EB8",
 "theme_color": "#2F3BA2",
