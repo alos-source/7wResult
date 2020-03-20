@@ -73,6 +73,10 @@
 #button{
     height:20px;
     width:40px;
+    margin:0 auto;
+    margin-right:10px;
+    margin-top: 20px;
+    float:right;
 }
 
   #styleMilitary {
@@ -199,9 +203,13 @@ body {
 <script>
   datum = new Date();
   date.innerHTML = datum;
-  versionstring = "Version # v"
+  let BROWSER = "User-agent header sent: " + navigator.appVersion;
+  versionstring = " Version # v"
 versionnumber = 0.1;
-VERSION.innerHTML = versionstring+versionnumber;
+VERSION.innerHTML =  BROWSER+ versionstring+versionnumber;
+
+
+
 </script>
 </head>
 
