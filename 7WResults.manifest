@@ -1,4 +1,9 @@
 CACHE MANIFEST
+# mein kommentar
+#v0.0.1 change this to force update
+
+CACHE:
 index.html
 manifest.json
 images/7W-300x190.jpg
+favicon.ico

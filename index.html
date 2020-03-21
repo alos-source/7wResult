@@ -7,7 +7,8 @@
 <meta name="keywords" content="Calculator, Boardgame, Board Game">
 
 <head>
-<link rel="manifest" href="manifest.json" />
+<!-- <link rel="manifest" href="manifest.json" /> !-->
+
 
 <link rel="shortcut icon" href="/7wResult/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/7wResult/favicon.ico" type="image/x-icon">
@@ -201,9 +202,11 @@ body {
 
 </body>
 <script>
+
+let BROWSER = "User-agent header sent: " + navigator.appVersion;
+
   datum = new Date();
   date.innerHTML = datum;
-  let BROWSER = "User-agent header sent: " + navigator.appVersion;
   versionstring = " Version # v"
 versionnumber = 0.1;
 VERSION.innerHTML =  BROWSER+ versionstring+versionnumber;
