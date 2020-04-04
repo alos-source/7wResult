@@ -154,7 +154,7 @@ body {
             <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
             <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
             <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
-            <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+            <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" /><br /><br />
             <output type="number" id="output" size="15" value="Result" /><br />
         </div></form>
 
@@ -167,7 +167,7 @@ body {
             <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
             <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
             <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
-                <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+                <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" /><br /><br />
                 <output type="number" id="output" size="15" value="Result" /><br />
                     </div></form>
 
@@ -180,7 +180,7 @@ body {
             <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
             <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
             <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
-                    <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+                    <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" /><br /><br />
                     <output type="number" id="output" size="15" value="Result" /><br />
                     
                 </div></form>
@@ -194,7 +194,7 @@ body {
             <div id="styleYellow"><input type="number" id="input5" size="15" value="0" /><br /><br /></div>
             <div id="styleViolet"><input type="number" id="input6" size="15" value="0" /><br /><br /></div>
             <div id="styleGreen"><input type="number" id="input7" size="15" value="0" /><br /><br /></div>
-                        <input type="button" id="button" value="Sum Up!" onclick="output.value = parseFloat(input1.value) + parseFloat(input2.value) + parseFloat(input3.value) + parseFloat(input4.value) + parseFloat(input5.value) + parseFloat(input6.value) + parseFloat(input7.value)" /><br /><br />
+                        <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" /><br /><br />
                         <output type="number" id="output" size="15" value="Result" /><br />
                             
                     </div></form>
@@ -211,10 +211,16 @@ let BROWSER = "User-agent header sent: " + navigator.appVersion;
   datum = new Date();
   date.innerHTML = datum;
   versionstring = " Version # v"
-versionnumber = 0.1;
+versionnumber = 0.2;
 VERSION.innerHTML =  BROWSER+ versionstring+versionnumber;
 
-
+function sumPTS(number1, number2, number3, number4, number5, number6 , number7) {
+      let sum = parseInt(number1)+parseInt(number2)+parseInt(number3)+parseInt(number4)+parseInt(number5)+parseInt(number6)+parseInt(number7);
+      console.log(toString("Result: "+ sum));
+      return sum;
+      //document.getElementById(Result).innerHTML = sum;
+      
+  }
 
 </script>
 </head>
