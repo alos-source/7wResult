@@ -5,4 +5,4 @@ This Project is calculates results of a boardgame on a webpage. The page could b
 The project page is hosted as a github page: https://alos-source.github.io/7wResult/
 
 ## ToDos
-Opon ToDos are listed on file [toDo.md].
+Opon ToDos are listed on file [toDo.md](toDo.md).
