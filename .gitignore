@@ -1,5 +1,7 @@
 # ignore batch files
 *.bat
+# ignore powershell files
+*.ps1
 
 # ignore changelog
 CHANGELOG.md
