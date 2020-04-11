@@ -1,0 +1,5 @@
+# ignore batch files
+*.bat
+
+# ignore changelog
+CHANGELOG.md
