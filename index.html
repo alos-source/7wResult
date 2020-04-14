@@ -73,7 +73,11 @@
          
      }
 
- 
+     #tipps {
+         font-size: 18;
+         text-align: center;      
+         
+     }
 #number {
   width: 3em;
 
@@ -164,7 +168,8 @@ body {
 <body lang="en">
     <title>7W Results</title>
     <p  class= "Title" id="Title" >7W Results <br> Generated from <a href="https://github.com/alos-source/7wResult">GitHub Repo</a></p>
-    <p id="date"> <br /></p>
+    <p id="tipps"> <br>To clear input refresh page.</p>
+
     <div style="overflow:auto">
 
             <form action="Kategorie"><div class="Kategorie">
@@ -236,6 +241,7 @@ body {
                     </div></form>
                 </div>
 
+<p id="date"> <br /></p>
 <p id=VERSION></p>
                 
 
@@ -247,7 +253,7 @@ let BROWSER = "User-agent header sent: " + navigator.appVersion;
   datum = new Date();
   date.innerHTML = datum;
   versionstring = " Version # v"
-versionnumber = 0.3;
+versionnumber = 0.4;
 VERSION.innerHTML =  BROWSER+ versionstring+versionnumber;
 
 function sumPTS(number1, number2, number3, number4, number5, number6 , number7) {
