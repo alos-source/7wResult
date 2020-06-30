@@ -212,7 +212,7 @@ body {
             <p id="styleViolet"><input type="number" id="input6" size="15" value="0" /></p>
             
             <p id="styleGreen">
-              <input type="button" id="buttonColoum" value="devCalc" onclick=" myFunction() " />
+              <input type="button" id="buttonColoum" value="devCalc" onclick=" toggleGreenDetail() " />
               <input type="number" id="input7" size="15" value="0" />
 
             </p>
@@ -303,7 +303,7 @@ function calcRnD(cat1, cat2, cat3){
   return numSum;  
 }
 
-function myFunction() {
+function toggleGreenDetail() {
   var x = document.getElementById("styleGreenDetail");
   if (x.style.display === "none") {
     x.style.display = "block";
