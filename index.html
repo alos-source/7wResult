@@ -88,7 +88,7 @@
   text-align: center;
 }
 
-#input1, #input2, #input3, #input4, #input5, #input6, #input7, #output{
+#input1, #input2, #input3, #input4, #input5, #input6, #input7, #output, #inputDev1,#inputDev2, #inputDev3{
   width: 3em;
 
  }
@@ -163,6 +163,22 @@ body {
 
 }
 
+#styleGreenDetail {
+    border: 3px solid green;
+    text-align: center;
+
+  }
+
+  #buttonColoum{
+    height:20px;
+    width:40px;
+    margin-top: 20px;
+    margin:0 auto;
+    float:left;
+    border-radius: 5px;
+
+}
+
 </style>
 
 <body lang="en">
@@ -194,7 +210,21 @@ body {
             <p id="styleBlue"><input type="number" id="input4" size="5" value="0" /></p>
             <p id="styleYellow"><input type="number" id="input5" size="15" value="0" /></p>
             <p id="styleViolet"><input type="number" id="input6" size="15" value="0" /></p>
-            <p id="styleGreen"><input type="number" id="input7" size="15" value="0" /></p>
+            
+            <p id="styleGreen">
+              <input type="button" id="buttonColoum" value="devCalc" onclick=" myFunction() " />
+              <input type="number" id="input7" size="15" value="0" />
+
+            </p>
+             <p id="styleGreenDetail">
+
+                  <input type="button" id="button" value="Calc" onclick="input7.value = calcRnD(inputDev1.value,inputDev2.value,inputDev3.value)" />
+                  <input type="number" id="inputDev1" size="15" value="0" />                 
+                  <input type="number" id="inputDev2" size="15" value="0" />
+                  <input type="number" id="inputDev3" size="15" value="0" />
+
+                </p>
+
             <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
             <output type="number" id="output" size="15" value="Result" />
         </div></form>
@@ -258,8 +288,7 @@ VERSION.innerHTML =  BROWSER+ versionstring+versionnumber;
 
 function sumPTS(number1, number2, number3, number4, number5, number6 , number7) {
       let sum = parseInt(number1)+parseInt(number2)+parseInt(number3)+parseInt(number4)+parseInt(number5)+parseInt(number6)+parseInt(number7);
-      console.log(toString("Result: "+ sum));
-      calcRnD(3,3,5);          
+      console.log(toString("Result: "+ sum));      
       //document.getElementById(Result).innerHTML = sum;
       
   }
@@ -273,6 +302,15 @@ function calcRnD(cat1, cat2, cat3){
   console.log("points from RnD: "+ numSum);
   return numSum;  
 }
+
+function myFunction() {
+  var x = document.getElementById("styleGreenDetail");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
 
 </script>
 </head>
