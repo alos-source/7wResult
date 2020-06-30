@@ -225,8 +225,8 @@ body {
 
                 </p>
 
-            <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
-            <output type="number" id="output" size="15" value="Result" />
+            <input type="button" id="button" value="Sum Up!" onclick="output.innerHTML = parseInt(sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value)))" />;
+            <output type="number" id="output" size="15" value="0" />
         </div></form>
 
         <form action="spieler2"><div class="box2">
@@ -277,6 +277,8 @@ body {
 
 </body>
 <script>
+let numberPlayers
+let pts=[];
 
 let BROWSER = "User-agent header sent: " + navigator.appVersion;
 
@@ -288,7 +290,17 @@ VERSION.innerHTML =  BROWSER+ versionstring+versionnumber;
 
 function sumPTS(number1, number2, number3, number4, number5, number6 , number7) {
       let sum = parseInt(number1)+parseInt(number2)+parseInt(number3)+parseInt(number4)+parseInt(number5)+parseInt(number6)+parseInt(number7);
-      console.log(toString("Result: "+ sum));      
+      console.log(("Result: "+ sum));      
+      //document.getElementById(Result).innerHTML = sum;
+      return sum;
+  }
+
+  function updatePTS(index, number) {
+    
+    pts[index]=number;
+    output = document.getElementById("output");
+
+      console.log(("Results: "+ pts));      
       //document.getElementById(Result).innerHTML = sum;
       
   }
