@@ -317,19 +317,23 @@ function calcRnD(cat1, cat2, cat3){
 
 function toggleGreenDetail() {
   var x = document.getElementById("styleGreenDetail");
+  let y = document.getElementById("input7");
+
   if (x.style.display === "none") {
     x.style.display = "block";
+    y.disabled = true;
   } else {
     x.style.display = "none";
+    y.disabled = false;
   }
 
-let y = document.getElementById("input7");
-if (y.disabled === false) {
-  y.disabled = true;
-  } else {
-    y.disabled = false;
 
-} 
+//if (y.disabled === false) {
+//  y.disabled = true;
+//  } else {
+//    y.disabled = false;
+
+//} 
 }
 </script>
 </head>
