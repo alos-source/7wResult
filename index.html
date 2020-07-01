@@ -166,7 +166,7 @@ body {
 #styleGreenDetail {
     border: 3px solid green;
     text-align: center;
-
+    display: block;
   }
 
   #buttonColoum{
@@ -225,7 +225,7 @@ body {
 
                 </p>
 
-            <input type="button" id="button" value="Sum Up!" onclick="output.innerHTML = parseInt(sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value)))" />;
+            <input type="button" id="button" value="Sum Up!" onclick="output.innerHTML = parseInt(sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value)))" />
             <output type="number" id="output" size="15" value="0" />
         </div></form>
 
@@ -322,8 +322,15 @@ function toggleGreenDetail() {
   } else {
     x.style.display = "none";
   }
-} 
 
+let y = document.getElementById("input7");
+if (y.disabled === false) {
+  y.disabled = true;
+  } else {
+    y.disabled = false;
+
+} 
+}
 </script>
 </head>
 
