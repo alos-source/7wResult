@@ -163,10 +163,10 @@ body {
 
 }
 
-#styleGreenDetail {
+#styleGreenDetail1, #styleGreenDetail2, #styleGreenDetail3, #styleGreenDetail4 {
     border: 3px solid green;
     text-align: center;
-    display: none;
+
   }
 
   #buttonColoum{
@@ -212,13 +212,11 @@ body {
             <p id="styleViolet"><input type="number" id="input6" size="15" value="0" /></p>
             
             <p id="styleGreen">
-              <input type="button" id="buttonColoum" value="devCalc" onclick=" toggleGreenDetail() " />
+              <input type="button" id="buttonColoum" value="&#128208" onclick=" toggleGreenDetail('styleGreenDetail1');input7.value = calcRnD(inputDev1.value,inputDev2.value,inputDev3.value) " />
               <input type="number" id="input7" size="15" value="0" />
 
             </p>
-             <p id="styleGreenDetail">
-
-                  <input type="button" id="button" value="Calc" onclick="input7.value = calcRnD(inputDev1.value,inputDev2.value,inputDev3.value)" />
+             <p id="styleGreenDetail1" class="toggleView">
                   <input type="number" id="inputDev1" size="15" value="0" />                 
                   <input type="number" id="inputDev2" size="15" value="0" />
                   <input type="number" id="inputDev3" size="15" value="0" />
@@ -237,7 +235,18 @@ body {
             <p id="styleBlue"><input type="number" id="input4" size="5" value="0" /></p>
             <p id="styleYellow"><input type="number" id="input5" size="15" value="0" /></p>
             <p id="styleViolet"><input type="number" id="input6" size="15" value="0" /></p>
-            <p id="styleGreen"><input type="number" id="input7" size="15" value="0" /></p>
+            <p id="styleGreen">
+              <input type="button" id="buttonColoum" value="&#128208" onclick=" toggleGreenDetail('styleGreenDetail2');input7.value = calcRnD(inputDev1.value,inputDev2.value,inputDev3.value) " />
+              <input type="number" id="input7" size="15" value="0" />
+            
+            </p>
+            <p id="styleGreenDetail2" class="toggleView">              
+    
+              <input type="number" id="inputDev1" size="15" value="0" />                 
+              <input type="number" id="inputDev2" size="15" value="0" />
+              <input type="number" id="inputDev3" size="15" value="0" />
+
+            </p>
                 <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
                 <output type="number" id="output" size="15" value="Result" />
                     </div></form>
@@ -250,7 +259,18 @@ body {
             <p id="styleBlue"><input type="number" id="input4" size="5" value="0" /></p>
             <p id="styleYellow"><input type="number" id="input5" size="15" value="0" /></p>
             <p id="styleViolet"><input type="number" id="input6" size="15" value="0" /></p>
-            <p id="styleGreen"><input type="number" id="input7" size="15" value="0" /></p>
+            <p id="styleGreen">
+              <input type="button" id="buttonColoum" value="&#128208" onclick=" toggleGreenDetail('styleGreenDetail3');input7.value = calcRnD(inputDev1.value,inputDev2.value,inputDev3.value) " />
+              <input type="number" id="input7" size="15" value="0" />
+            
+            </p>
+            <p id="styleGreenDetail3">              
+      
+              <input type="number" id="inputDev1" size="15" value="0" />                 
+              <input type="number" id="inputDev2" size="15" value="0" />
+              <input type="number" id="inputDev3" size="15" value="0" />
+
+            </p>
                     <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
                     <output type="number" id="output" size="15" value="Result" />
                     
@@ -264,7 +284,16 @@ body {
             <p id="styleBlue"><input type="number" id="input4" size="5" value="0" /></p>
             <p id="styleYellow"><input type="number" id="input5" size="15" value="0" /></p>
             <p id="styleViolet"><input type="number" id="input6" size="15" value="0" /></p>
-            <p id="styleGreen"><input type="number" id="input7" size="15" value="0" /></p>
+            <p id="styleGreen">
+              <input type="button" id="buttonColoum" value="&#128208" onclick=" toggleGreenDetail('styleGreenDetail4');input7.value = calcRnD(inputDev1.value,inputDev2.value,inputDev3.value) " />
+              <input type="number" id="input7" size="15" value="0" /></p>
+            <p id="styleGreenDetail4" class="toggleView">              
+         
+              <input type="number" id="inputDev1" size="15" value="0" />                 
+              <input type="number" id="inputDev2" size="15" value="0" />
+              <input type="number" id="inputDev3" size="15" value="0" />
+
+            </p>
                         <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
                         <output type="number" id="output" size="15" value="Result" />
                             
@@ -315,8 +344,9 @@ function calcRnD(cat1, cat2, cat3){
   return numSum;  
 }
 
-function toggleGreenDetail() {
-  var x = document.getElementById("styleGreenDetail");
+function toggleGreenDetail(toggleID) {
+  let x = document.getElementById(toggleID);
+//  let view = document.getElementsByClassName('toggleView');
   let y = document.getElementById("input7");
 
   if (x.style.display === "none") {
@@ -327,6 +357,7 @@ function toggleGreenDetail() {
     y.disabled = false;
   }
 
+ 
 
 //if (y.disabled === false) {
 //  y.disabled = true;
@@ -335,6 +366,13 @@ function toggleGreenDetail() {
 
 //} 
 }
+
+function toggleGreenDetail2() {
+
+$('styleGreenDetail').css('display', 'none');
+
+}
+
 </script>
 </head>
 
