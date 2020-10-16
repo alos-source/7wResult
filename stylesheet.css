@@ -10,6 +10,28 @@
   text-align: center;      
   }
 
+  #button{
+    height:20px;
+    width:40px;
+    margin:0 auto;
+    margin-right:10px;
+    margin-top: 20px;
+    float:left;
+    border-radius: 5px;
+    
+}
+
+#buttonColoum{
+  height:20px;
+  width:40px;
+  margin-top: 20px;
+  margin:0 auto;
+  float:left;
+  border-radius: 5px;
+
+}
+
+
 }
 
 @media print{
@@ -21,6 +43,13 @@
   display: none;
    }
 
+   #button{
+    display: none;
+    }
+
+    #buttonColoum{
+      display: none;
+    } 
 }
 
 #date{
@@ -92,17 +121,6 @@
 
  }
 
-#button{
-    height:20px;
-    width:40px;
-    margin:0 auto;
-    margin-right:10px;
-    margin-top: 20px;
-    float:left;
-    border-radius: 5px;
-
-}
-
 #output{
     height:20px;
     width:40px;
@@ -168,12 +186,4 @@ body {
     
   }
 
-  #buttonColoum{
-    height:20px;
-    width:40px;
-    margin-top: 20px;
-    margin:0 auto;
-    float:left;
-    border-radius: 5px;
 
-}
