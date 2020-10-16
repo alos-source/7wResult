@@ -35,21 +35,9 @@
 }
 
 @media print{
-  #VERSION{
+  #VERSION, #tipps, #button, #buttonColoum {
     display: none;
     }
-
-#tipps {
-  display: none;
-   }
-
-   #button{
-    display: none;
-    }
-
-    #buttonColoum{
-      display: none;
-    } 
 }
 
 #date{
