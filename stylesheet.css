@@ -1,18 +1,37 @@
+@media screen {  
 
 #VERSION{
   text-align: right;
   font-size: small;
+  }
+
+#tipps {
+  font-size: 18;
+  text-align: center;      
+  }
+
+}
+
+@media print{
+  #VERSION{
+    display: none;
+    }
+
+#tipps {
+  display: none;
+   }
 
 }
 
 #date{
   text-align: center;
-
 }
-#disclaimer{
-  text-align: center;
 
-}
+  #disclaimer{
+    text-align: center;
+  }
+
+
 .Spieler1{
     position: relative;
     left: 50px;
@@ -58,11 +77,6 @@
          
      }
 
-     #tipps {
-         font-size: 18;
-         text-align: center;      
-         
-     }
 #number {
   width: 3em;
 
