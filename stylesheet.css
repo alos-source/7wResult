@@ -113,7 +113,7 @@
 
 #inputName {
   width: 6em;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
 }
