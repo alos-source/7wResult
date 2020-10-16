@@ -114,6 +114,8 @@
 #inputName {
   width: 6em;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #input1, #input2, #input3, #input4, #input5, #input6, #input7, #output, #inputDev1,#inputDev2, #inputDev3{
