@@ -1,3 +1,5 @@
+
+
 @media screen {  
 
 #VERSION{
@@ -59,12 +61,12 @@
      width:18%;
      margin-right: 2%;
      padding: 10px;
-     background: #eee;
+     background: var(--color-Box);
      box-sizing: border-box;
      line-height: 26px;
      margin-top: 10px;
      min-width: 60px;
-     box-shadow: 10px 10px 5px grey;
+     box-shadow: 10px 10px 5px var(--color-BoxShadow);
      border-radius: 5px;
      max-width: 160px;
 
@@ -75,13 +77,13 @@
      width:18%;
      margin-right: 2%;
      padding: 05px 10px 10px 5px;
-     background: #eee;
+     background: var(--color-Box);
      box-sizing: border-box;
      line-height: 26px;
      margin-top: 10px;
      max-width: 100px;
      min-width: 50px;
-     box-shadow: 10px 10px 5px grey;
+     box-shadow: 10px 10px 5px var(--color-BoxShadow);
      border-radius: 5px;
 
 }
@@ -89,7 +91,7 @@
 .Title {
          font-size: 2em;
          text-align: center;
-         border: 3px solid green;
+         border: 3px solid var(--color-Title);;
          font-weight: bold;
          
      }
@@ -104,6 +106,12 @@
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#Categories{
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 #input1, #input2, #input3, #input4, #input5, #input6, #input7, #output, #inputDev1,#inputDev2, #inputDev3{
@@ -166,7 +174,7 @@
   }
 
 body {
-    background-color: #F7F8E0;
+    background-color: var(--color-BG);
 
 }
 
@@ -176,4 +184,11 @@ body {
     
   }
 
+  :root {
 
+    --color-Title: #80c597;
+    --color2: #8dd1a4;
+    --color-BoxShadow: #e1b4a6;
+    --color-Box: #e3d1a9;
+    --color-BG: #dde5ad;
+  }
