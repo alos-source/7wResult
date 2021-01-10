@@ -186,9 +186,9 @@ body {
 
   :root {
 
-    --color-Title: #F5972C;
+    --color-Title: #007DAB;
     --color2: #8dd1a4;
-    --color-BoxShadow: #92E0D6;
-    --color-Box: #C0FAF2;
-    --color-BG: #FFC745;
+    --color-BoxShadow: #AD5C05;
+    --color-Box: #F8DBBD;
+    --color-BG: #83DEFF;
   }
