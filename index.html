@@ -24,9 +24,11 @@
     <p  class= "Title" id="Title" >7W Results </p>
     <p id="tipps"> <br>Refresh page to clear input.</p>
     <p id="date"> <br></p>
-    <div style="overflow:auto">
 
-            <form action="Kategorie"><div class="Kategorie">
+    <div class="outerspace" style="overflow:auto">
+      <div class="content">
+        <div class="Kategorie">
+            <form action="Kategorie">
                     <p id="Kategorie" >Categories</p>
                     <p id="styleMilitary" >&#9876; </p>
                     <p id="styleCoins" >&#128176;/3</p>
@@ -37,8 +39,9 @@
                     <p id="styleGreen" >&#128208;</p>
                     <p id="Kategorie" >∑</p>
                     <input type="button" id="button" value="Print" onclick=" window.print() " />
-                </div></form>
-        <form action="spieler1" id="Player" ><div class="box1">
+                </form></div>
+                <div class="box1">
+                <form action="spieler1" id="Player" >
             <!-- 
             <p id="player1" >Player 1</p>-->
             <input type="Text" id="inputName"  size="15" value="Player 1" />
@@ -63,9 +66,9 @@
 
             <input type="button" id="button" value="Sum Up!" onclick="output.innerHTML = parseInt(sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value)))" />
             <output type="number" id="output" size="15" value="0" />
-        </div></form>
+          </form></div>
 
-        <form action="spieler2"><div class="box2">
+          <div class="box2"><form action="spieler2">
                 <input type="Text" id="inputName"  size="15" value="Player 2" />
                 <p id="styleMilitary"><input type="number" id="input1"  size="15" value="0" /></p>
             <p id="styleCoins"><input type="number" id="input2" size="5" value="0"></p>
@@ -87,9 +90,9 @@
             </p>
                 <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
                 <output type="number" id="output" size="15" value="Result" />
-                    </div></form>
+              </form></div>
 
-            <form action="spieler3" ><div class="box3">
+              <div class="box3"><form action="spieler3" >
                     <input type="Text" id="inputName"  size="15" value="Player 3" />
                     <p id="styleMilitary"><input type="number" id="input1"  size="15" value="0" /></p>
             <p id="styleCoins"><input type="number" id="input2" size="5" value="0"></p>
@@ -112,9 +115,9 @@
                     <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
                     <output type="number" id="output" size="15" value="Result" />
                     
-                </div></form>
-            
-                <form action="spieler4"><div class="box4">
+                  </form></div>
+                  <div class="box4">       
+                <form action="spieler4">
                         <input type="Text" id="inputName"  size="15" value="Player 4" />
                         <p id="styleMilitary"><input type="number" id="input1"  size="15" value="0" /></p>
             <p id="styleCoins"><input type="number" id="input2" size="5" value="0"></p>
@@ -134,9 +137,10 @@
             </p>
                         <input type="button" id="button" value="Sum Up!" onclick="output.value = sumPTS((input1.value) ,(input2.value) ,(input3.value) ,(input4.value) ,(input5.value) ,(input6.value) ,(input7.value))" />
                         <output type="number" id="output" size="15" value="Result" />
-                            
-                    </div></form>
+                      </form>    
+                    </div>
                 </div>
+              </div>
 
 
 <p id= disclaimer>Private Project, not related to any company or business. <br> Generated from <a href="https://github.com/alos-source/7wResult">GitHub Repo</a></p>

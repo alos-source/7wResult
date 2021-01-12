@@ -1,3 +1,5 @@
+
+
 @media screen {  
 
  
@@ -61,6 +63,17 @@
   }
 
 
+  .outerspace {
+    overflow:auto;
+  }
+  .content {
+    text-align: center;
+    margin:0 auto;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+  }
+
 .Spieler1{
     position: relative;
     left: 50px;
@@ -71,12 +84,13 @@
      width:18%;
      margin-right: 2%;
      padding: 10px;
-     background: #eee;
+     background: var(--color-Box);
      box-sizing: border-box;
      line-height: 26px;
      margin-top: 10px;
+     margin-bottom: 10px;
      min-width: 60px;
-     box-shadow: 10px 10px 5px grey;
+     box-shadow: 10px 10px 5px var(--color-BoxShadow);
      border-radius: 5px;
      max-width: 160px;
 
@@ -87,13 +101,14 @@
      width:18%;
      margin-right: 2%;
      padding: 05px 10px 10px 5px;
-     background: #eee;
+     background: var(--color-Box);
      box-sizing: border-box;
      line-height: 26px;
      margin-top: 10px;
+     margin-bottom: 10px;
      max-width: 100px;
      min-width: 50px;
-     box-shadow: 10px 10px 5px grey;
+     box-shadow: 10px 10px 5px var(--color-BoxShadow);
      border-radius: 5px;
 
 }
@@ -101,7 +116,7 @@
 .Title {
          font-size: 2em;
          text-align: center;
-         border: 3px solid green;
+         border: 3px solid var(--color-Title);;
          font-weight: bold;
 
      }
@@ -114,6 +129,12 @@
 #inputName {
   width: 6em;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+#Categories{
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -179,7 +200,7 @@
   }
 
 body {
-    background-color: #F7F8E0;
+    background-color: var(--color-BG);
 
 }
 
@@ -189,4 +210,11 @@ body {
     
   }
 
+  :root {
 
+    --color-Title: #007DAB;
+    --color2: #8dd1a4;
+    --color-BoxShadow: #AD5C05;
+    --color-Box: #F8DBBD;
+    --color-BG: #83DEFF;
+  }
