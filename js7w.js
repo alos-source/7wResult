@@ -1,14 +1,37 @@
+window.onload = function () {
+      console.log('Dokument geladen');
+      init();
+  }
+
+function init(){
+  console.log('initializing');
+  area1.value = localStorage.getItem('area1');
+  area2.value = localStorage.getItem('area2');
+  area3.value = localStorage.getItem('area3');
+  area4.value = localStorage.getItem('area4');
 
 let numberPlayers
 let pts=[];
-
 let BROWSER = "User-agent header sent: " + navigator.appVersion;
-
-  datum = new Date();
-  date.innerHTML = datum;
-  versionstring = " Version # v"
-versionnumber = 0.4;
+datum = new Date();
+date.innerHTML = datum;
+versionstring = " Version # v"
+versionnumber = 0.5;
 VERSION.innerHTML =  BROWSER+ versionstring+versionnumber;
+};
+
+area1.oninput = () => {
+  localStorage.setItem('area1', area1.value)
+}
+area2.oninput = () => {
+  localStorage.setItem('area2', area2.value)
+}
+area3.oninput = () => {
+  localStorage.setItem('area3', area3.value)
+}
+area4.oninput = () => {
+  localStorage.setItem('area4', area4.value)
+}
 
 function sumPTS(number1, number2, number3, number4, number5, number6 , number7) {
       let sum = parseInt(number1)+parseInt(number2)+parseInt(number3)+parseInt(number4)+parseInt(number5)+parseInt(number6)+parseInt(number7);
@@ -50,3 +73,4 @@ function toggleGreenDetail(toggleID) {
   }
 
 }
+
