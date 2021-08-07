@@ -5,3 +5,6 @@
 
 # ignore changelog
 CHANGELOG.md
+
+# developer folders
+screenshots/
