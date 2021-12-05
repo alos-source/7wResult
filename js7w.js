@@ -3,6 +3,11 @@ window.onload = function () {
       init();
   }
 
+document.addEventListener('DOMContentLoaded', init, false);
+function init() {
+console.log('empty for now')
+}
+
 function init(){
   console.log('initializing');
   area1.value = localStorage.getItem('area1');
