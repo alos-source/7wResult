@@ -15,7 +15,7 @@ function init(){
   
   init();
 
-let numberPlayers
+ let numberPlayers
 let pts=[];
 let BROWSER = "User-agent header sent: " + navigator.appVersion;
 datum = new Date();
