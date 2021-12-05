@@ -1,9 +1,10 @@
-window.onload = function () {
-      console.log('Dokument geladen');
-      init();
-  }
+//window.onload = function () {
+//      console.log('window loaded');
+//      init();
+//  }
 
 document.addEventListener('DOMContentLoaded', init, false);
+console.log('dom loaded');
 function init() {
 console.log('empty for now')
 }
