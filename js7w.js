@@ -12,8 +12,10 @@ function init(){
   area2.value = localStorage.getItem('area2');
   area3.value = localStorage.getItem('area3');
   area4.value = localStorage.getItem('area4');
+  
+  init();
 
-let numberPlayers
+ let numberPlayers
 let pts=[];
 let BROWSER = "User-agent header sent: " + navigator.appVersion;
 datum = new Date();
