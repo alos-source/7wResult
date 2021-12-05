@@ -5,9 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', init, false);
 console.log('dom loaded');
-function init() {
-console.log('empty for now')
-}
 
 function init(){
   console.log('initializing');
