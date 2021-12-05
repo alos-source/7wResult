@@ -1,10 +1,10 @@
-//window.onload = function () {
-//      console.log('window loaded');
-//      init();
-//  }
+window.onload = function () {
+      console.log('window loaded');
+      init();
+  }
 
-document.addEventListener('DOMContentLoaded', init, false);
-console.log('dom loaded');
+//document.addEventListener('DOMContentLoaded', init, false);
+//console.log('dom loaded');
 
 function init(){
   console.log('initializing');
@@ -12,6 +12,8 @@ function init(){
   area2.value = localStorage.getItem('area2');
   area3.value = localStorage.getItem('area3');
   area4.value = localStorage.getItem('area4');
+  
+  init();
 
 let numberPlayers
 let pts=[];
